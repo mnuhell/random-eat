@@ -10,7 +10,6 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 .random{
@@ -40,7 +39,7 @@ html{
 .frase{
     position: absolute;
     display: block;
-    margin-top: 1.7em;
+    margin-top: 2em;
     text-align: center;
     font-size: 2em;
     left: 25%;
