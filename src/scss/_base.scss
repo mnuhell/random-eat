@@ -1,5 +1,6 @@
 html{
     background-color: $bg-color;
+    font-family: 'Courier Prime', monospace;
 }
 .container{
 
@@ -12,24 +13,75 @@ html{
     height: 100vh;
 }
 
+.random{
+    position: relative;
+    min-width: 20em;
+    text-align: center;
+    min-height: 20em;
+}
+
+.box-content{
+    position: absolute;
+    top:0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.number{
+    padding: 0;
+    margin: 0;
+    color: $black-color;
+    text-transform: uppercase;
+    font-size: 5em;
+    font-weight: 100;
+}
+
+.frase{
+    position: absolute;
+    display: block;
+    margin-top: 1.7em;
+    text-align: center;
+    font-size: 2em;
+    left: 25%;
+    right: 25%;
+}
+
 .button{
 
-    background-color: $secondary-color;
-    color: $black-color;
+    position: absolute;
+    background-color: $primary-color;
+    color: $secondary-color;
     text-transform: uppercase;
     font-weight: 900;
     cursor: pointer;
+    font-size: 1em;
     padding: 10px 25px;
+    bottom: 0;
+    left: 0;
     border:0;
-    border-radius: .5em;
-    transition: background-color color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+    width: 100%;
 
     &:hover{
-        background-color: $primary-color;
-        color: $bg-color;
+        background-color: $primary-color-hover;
     }
 }
+
 .block{
 
     display: block;
+}
+
+form{
+
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span{
+        font-size: 4em;
+        font-weight: 900;
+    }
 }
