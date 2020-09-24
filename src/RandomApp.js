@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import '../src/scss/style.scss';
 
@@ -18,20 +18,21 @@ const RandomApp = () => {
         return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
       }
 
-    const submitForm = ( e ) => {
-        e.preventDefault();
-        setState(Math.floor(Math.random() * (6 - 1 + 1)) + 1);
-        
-        console.log(state);
+      useEffect(() => {
+
         if(state == 6){
-            setFrase( "Que suerte copon!!" )
+            setFrase( "Que suerte copon!!" );
+            console.log(frase);
         } else if( state == 1) {
             setFrase( "jajaja me cago en dios" )
+            console.log(frase);
         }
         
-        setFrase(initialState);
+      }, [state])
 
-
+    const submitForm = ( e ) => {
+        e.preventDefault();
+        setState(getRandomIntInclusive(min, max));
     }
 
     return (
