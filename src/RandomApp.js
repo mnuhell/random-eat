@@ -22,10 +22,12 @@ const RandomApp = () => {
 
         if(state == 6){
             setFrase( "Que suerte copon!!" );
-            console.log(frase);
+            
         } else if( state == 1) {
             setFrase( "jajaja me cago en dios" )
-            console.log(frase);
+            
+        } else {
+            setFrase( initialState );
         }
         
       }, [state])
@@ -36,16 +38,20 @@ const RandomApp = () => {
     }
 
     return (
+        <>
+        <div className="wrapper">
+            <div className="box__frase">
+                        <p className="frase">{ frase }</p>
+                    </div>
+        
         <div className="container">
+        
             <div className="random">
                     
                 <form onSubmit={ submitForm }>
                     
                     <div className="box__number">
                         <p className="number">{ state }</p>
-                    </div>
-                    <div className="box__frase">
-                        <p className="frase">{ frase }</p>
                     </div>
 
                     <div className="block">
@@ -54,7 +60,8 @@ const RandomApp = () => {
                 </form>
             </div>
         </div>
-        
+        </div>
+        </>
     )
 }
 
