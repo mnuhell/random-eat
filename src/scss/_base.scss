@@ -1,6 +1,6 @@
 html{
     background-color: $bg-color;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Ranchers', cursive;
 }
 body{
     padding: 0;
@@ -96,9 +96,12 @@ body{
     display: block;
 }
 
+.box__number{
+    margin-bottom: 7em;
+}
+
 form{
 
-    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
