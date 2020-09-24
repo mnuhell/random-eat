@@ -32,7 +32,7 @@ body{
     text-align: center;
     top: 0%;
     width: 100%;
-    padding: 20px;
+    padding: 15px 0;
     text-transform: uppercase;
     font-weight: 900;
 }
@@ -98,6 +98,9 @@ body{
 
 .box__number{
     margin-bottom: 7em;
+    .number{
+        color: $primary-color;
+    }
 }
 
 form{

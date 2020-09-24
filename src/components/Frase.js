@@ -19,7 +19,7 @@ export const Frase = ( state ) => {
         } else if( number == 3) {
             setFrase( "¡Ni que fuera yo Bin laden!" )
         } else if( number == 2) {
-            setFrase( "¡No te calientes, tu ya no comes!" )
+            setFrase( "¡No te calientes, tú ya no comes!" )
         }
         else {
             setFrase( initialState );
