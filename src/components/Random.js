@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Loading from '../components/Loading';
 import { getRandom } from '../helpers/getRandom';
+import { Footer } from './Footer';
 import { Frase } from './Frase';
 
 
@@ -42,6 +43,7 @@ const Random = () => {
                 </div>
             </form>
         </div>
+        <Footer />
         </>
     )
 }

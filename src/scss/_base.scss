@@ -55,7 +55,7 @@ body{
     margin: 0;
     color: $black-color;
     text-transform: uppercase;
-    font-size: 5em;
+    font-size: 10em;
     font-weight: 100;
 }
 
@@ -112,5 +112,28 @@ form{
     span{
         font-size: 4em;
         font-weight: 900;
+    }
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: $primary-color;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: .8em;
+
+    p{
+        color: $secondary-color;
+        padding: 5px;
+        margin: 0;
+    }
+
+    a{
+        color: $secondary-color;
+        padding: 0;
+        margin: 0;
     }
 }
